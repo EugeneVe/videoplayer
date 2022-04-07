@@ -14,6 +14,7 @@ const Main = () => {
           height="100%"
           src="https://www.youtube.com/embed/-uSZmiJnHfg"
           title="YouTube video player"
+          allowfullscreen="allowfullscreen"
           frameBorder="0"
         ></iframe>
       </div>
