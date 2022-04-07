@@ -1,0 +1,44 @@
+@import '../../mixins.scss';
+
+.main-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: url('../../assets/backgroundImage.svg') center no-repeat;
+  background-size: contain;
+  @media screen and (max-width: 1040px) {
+    background-repeat: repeat;
+    background-position: bottom;
+  }
+  .video-name {
+    padding: 25px 25px 35px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    color: var(--blue);
+    @media screen and (max-width: 1040px) {
+      padding: 65px 25px;
+    }
+  }
+  .video-player {
+    width: 756px;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .thumb-videos {
+    display: flex;
+    margin-top: 40px;
+    @media screen and (max-width: 1040px) {
+      padding: 35px 0;
+    }
+  }
+}
