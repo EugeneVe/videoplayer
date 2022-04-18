@@ -21,7 +21,7 @@ const Player = ({ videoFile }) => {
     <>
       <div className="video-name">Сборник мультфильмов. Учим виды транспорта для малышей Сборник мультфильмов.</div>
       <div className="video-player">
-        <video ref={video} width="100%" height="100%" onTimeUpdate={() => setProgressBar(video.current.currentTime)}>
+        <video ref={video} onTimeUpdate={() => setProgressBar(video.current.currentTime)}>
           <source src={videoFile} type="video/mp4" />
         </video>
         <div className="controllers">
