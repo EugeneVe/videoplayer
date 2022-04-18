@@ -1,5 +1,5 @@
 .video-name {
-  padding: 25px 25px 35px 25px;
+  margin: 35px 25px 35px 25px;
   font-size: 18px;
   font-weight: 600;
   text-overflow: ellipsis;
@@ -8,8 +8,9 @@
   white-space: nowrap;
   width: 100%;
   color: var(--blue);
-  @media screen and (max-width: 1040px) {
-    padding: 65px 25px;
+  @media screen and (max-width: 770px) {
+    margin: 25px 0;
+    padding: 0 5px;
   }
 }
 .video-player {
@@ -22,7 +23,13 @@
   background-color: #000;
   border-radius: 15px;
   overflow: hidden;
+  @media screen and (max-width: 770px) {
+    max-width: 95%;
+    margin: 5px;
+    border-radius: 5px;
+  }
   video {
+    width: 100%;
     position: absolute;
     z-index: 0;
     &::-webkit-media-controls-enclosure {
@@ -83,12 +90,5 @@
       height: 100%;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 50%);
     }
-  }
-}
-.thumb-videos {
-  display: flex;
-  margin-top: 40px;
-  @media screen and (max-width: 1040px) {
-    padding: 35px 0;
   }
 }
